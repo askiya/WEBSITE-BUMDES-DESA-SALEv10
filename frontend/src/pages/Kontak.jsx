@@ -47,7 +47,7 @@ const Kontak = ({ language }) => {
         whileInView="show"
         viewport={{ once: true }}
       >
-        <div className="max-w-7xl mx-auto text-center max-w-3xl">
+        <div className="max-w-7xl ">
           <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6">
             <MessageSquare className="h-4 w-4 mr-2" />
             {isIndonesian ? "Hubungi Kami" : "Contact Us"}

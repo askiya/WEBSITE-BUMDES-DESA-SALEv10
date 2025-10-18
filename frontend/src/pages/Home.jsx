@@ -38,7 +38,8 @@ const Home = ({ language }) => {
           }}
         ></div>
 
-        <div className="max-w-7xl mx-auto text-center max-w-4xl">
+        {/* ✅ Centered container */}
+        <div className="max-w-7xl mx-auto text-center px-4">
           <motion.div
             className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6"
             initial={{ opacity: 0, y: -20 }}
