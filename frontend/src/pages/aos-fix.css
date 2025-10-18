@@ -1,0 +1,13 @@
+/* 🔧 Perbaikan agar AOS tidak bentrok dengan Tailwind */
+[data-aos] {
+  opacity: 0 !important;
+  transform: translateY(50px) !important;
+  transition-property: transform, opacity !important;
+  transition-duration: 0.8s !important;
+  transition-timing-function: ease-out !important;
+}
+
+[data-aos].aos-animate {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
