@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: askiya/WEBSITE-BUMDES-DESA-SALEv10   # GANTI dengan repo GitHub kamu
+  branch: main
+
+media_folder: "public/uploads"   # tempat gambar disimpan
+public_folder: "/uploads"
+
+collections:
+  - name: "home"
+    label: "Halaman Utama"
+    files:
+      - file: "src/mock/homeContent.json"
+        label: "Konten Halaman Utama"
+        name: "homeContent"
+        fields:
+          - { label: "Judul Hero", name: "title", widget: "string" }
+          - { label: "Subjudul", name: "subtitle", widget: "text" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+
+  - name: "tentang"
+    label: "Halaman Tentang"
+    folder: "src/content/tentang"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Isi", name: "body", widget: "markdown" }
