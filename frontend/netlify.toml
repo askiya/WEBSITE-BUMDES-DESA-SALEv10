@@ -1,0 +1,8 @@
+[build]
+base = "frontend"
+publish = "frontend/dist"
+command = "npm install && npm run build"
+
+[build.environment]
+NODE_VERSION = "22.0.0"
+NPM_FLAGS = "--legacy-peer-deps"
