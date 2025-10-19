@@ -1,12 +1,10 @@
 [build]
   base = "frontend"
-  command = "npm install && npm run build"
-  publish = "frontend/dist"
+  publish = "frontend/frontend/dist"
+  command = "npm ci && npm run build"
 
 [build.environment]
-  NODE_VERSION = "22.0.0"
   NPM_FLAGS = "--legacy-peer-deps"
-  CI = "false"
+  NODE_VERSION = "20"
+  YARN_ENABLE_IMMUTABLE_INSTALLS = "false"
   NETLIFY_USE_YARN = "false"
-
-  
