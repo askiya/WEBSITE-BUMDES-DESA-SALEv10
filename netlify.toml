@@ -1,9 +1,9 @@
 [build]
 base = "frontend"
 publish = "frontend/build"
-command = "npm install && npm run build"
+command = "npm ci && npm run build"
 functions = "frontend/netlify/functions"
 
 [build.environment]
 NODE_VERSION = "20"
-
+NPM_FLAGS = "--legacy-peer-deps"
