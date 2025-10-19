@@ -1,10 +1,5 @@
 [build]
-  base = "frontend"
-  publish = "frontend/frontend/dist"
-  command = "npm ci && npm run build"
-
-[build.environment]
-  NPM_FLAGS = "--legacy-peer-deps"
-  NODE_VERSION = "20"
-  YARN_ENABLE_IMMUTABLE_INSTALLS = "false"
-  NETLIFY_USE_YARN = "false"
+base = "frontend"
+publish = "frontend/dist"
+command = "npm ci && npm run build"
+functions = "frontend/netlify/functions"
