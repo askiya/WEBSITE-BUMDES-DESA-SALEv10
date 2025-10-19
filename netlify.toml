@@ -1,7 +1,7 @@
 [build]
 base = "frontend"
 publish = "frontend/build"
-command = "npm install --legacy-peer-deps && npm run build"
+command = "corepack disable && npm install --legacy-peer-deps && npm run build"
 functions = "frontend/netlify/functions"
 
 [build.environment]
