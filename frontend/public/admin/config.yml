@@ -1,10 +1,12 @@
 backend:
   name: github
-  repo: askiya/WEBSITE-BUMDES-DESA-SALEv10   # GANTI dengan repo GitHub kamu
+  repo: askiya/WEBSITE-BUMDES-DESA-SALEv10 # ganti dengan repo kamu
   branch: main
+  auth_type: implicit
+  app_id: 9d97b081a2a8a1b13e48 # ini ID untuk Netlify CMS GitHub OAuth
 
-media_folder: "public/uploads"   # tempat gambar disimpan
-public_folder: "/uploads"
+media_folder: "public/uploads" # tempat gambar disimpan di repo
+public_folder: "/uploads" # path publik yang diakses oleh website
 
 collections:
   - name: "home"
